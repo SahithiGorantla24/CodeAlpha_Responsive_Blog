@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Responsive Blog Section </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        </link>
+        <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,300&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Lato', sans-serif;
+   
+}
+body{
+    background-image:url(https://th.bing.com/th/id/OIP.qcwy7AAi97NWwJT188ZRwwHaE7?pid=ImgDet&rs=1);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+.container{
+    width:100%;
+}
+.container  .row{
+    width:80%;
+    margin:auto;
+}
+.container  .row .header{
+    width:60%;
+    text-align:center;
+}
+.container  .row  .header h1{
+    text-align:right;
+    padding-top: 30px;
+    font-size: 45px;
+    color:#e19c30;
+}
+.container  .row   .header p{
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #6e6e6e;
+
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:auto;
+    border-color: 2px black;
+}
+.content  .card{
+    flex:1;
+    margin:10px 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.1);
+    background-color:whitesmoke;
+}
+.content .card img{
+    width:230px;
+    height:auto;
+
+}
+.content  .card h2{
+    margin-top:10px;
+    margin-left:10px;
+    font-size:18px;
+    font-family: fantasy;
+}
+.content .card h3{
+    font-family:cursive;
+    margin-left:50px;
+}
+.content .card p{
+    font-size:15px;
+    color:#6e6e6e;
+    line-height:1.5;
+    padding :10px;
+}
+@media screen and (max-width: 768px){
+    .content {
+        flex-direction: column;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+           <div class="row">
+            <div class="header">
+                <h1>Gonna Eat That?</h1>
+            </div>
+            <div class ="content">
+                <div class="card">
+                    <h2 >India's Recipe</h2>
+                    <h3>-Biriyani</h3>
+                    <img src="https://assets.gqindia.com/photos/5fb77ed2d0a8fc3651e93148/master/w_640%2Cc_limit/Biryani-Blues.jpg">
+                    
+                    <p>  Biryani is a mixed rice dish originating among the Muslims of South Asia. It is made with Indian spices, vegetables, rice, and usually some type of meat (chicken, beef, goat, lamb, prawn, or fish), or in some cases without any meat and sometimes, in addition, eggs and potatoes.</p>
+            
+                    </div>
+                <div class="card">
+                    <h2 >America</h2>
+                    <h3>-Cheeseburger</h3>
+                    <img src="https://media.cnn.com/api/v1/images/stellar/prod/170203114333-cheeseburger.jpg?q=w_3000,h_2000,x_0,y_0,c_fill/w_1280">
+                    <p >A cheeseburger is a burger with a slice of melted cheese on top of the meat patty, added near the end of the cooking time. Cheeseburgers can include variations in structure, ingredients and composition. As with other hamburgers, a cheeseburger may include various condiments and other toppings such as lettuce, tomato, onion, pickles, bacon, avocado, mushrooms, mayonnaise, ketchup, and mustard.</p>
+                    </div>
+                <div class ="card">
+                    <h2>Europe</h2>
+                    <h3>-Croissant</h3>
+                    <img src="https://www.cakenknife.com/wp-content/uploads/2017/04/Nutella-Rhubarb-Puff-Pastry-Croissants-Pic.jpg">
+    
+                    <p>These flaky, golden-colored, crescent-shaped pastries are best made with pure butter and a slightly sweet yeast dough. If made properly, the yellow-white interior should be just the slightest bit elastic when pulled from the center, ready to be covered with a pad of butter or some fresh jam.</p>
+                </div>
+                <div class ="card">
+                    <h2>Japan</h2>
+                    <h3>-Sushi</h3>
+                    <img src="https://img.theculturetrip.com/1440x/smart/wp-content/uploads/2019/08/cb3c0x-2.jpg">
+                    
+                    <p>Sushi is, without doubt, one of the most famous foods to come from Japan. A dish that was born in ancient times, sushi originated from the process of preserving fish in fermented rice. Today it’s made with vinegared rice and fresh fish, presented in a number of ways and shapes.</p>
+                </div>
+                
+            </div>
+    
+        </div>
+    </body>
+</html>
